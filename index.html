@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  #<title>Rooted Movement Somatics</title>
+  <title>Rooted Movement Somatics</title>
   <style>
     body {
       margin: 0;
@@ -25,11 +25,6 @@
       display: block;
       margin: 0 auto 1.5rem auto;
       border-radius: 12px;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-      letter-spacing: 2px;
     }
     header p {
       font-style: italic;
@@ -90,6 +85,45 @@
     .schedule a:hover {
       background-color: #3e3125;
     }
+    /* Subscribe section styling */
+    #subscribe {
+      text-align: center;
+      margin: 2rem auto;
+      padding: 2rem;
+      max-width: 500px;
+      background-color: #ede9e0;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    #subscribe h2 {
+      color: #2F3D35;
+    }
+    #subscribe p {
+      color: #5c4d3c;
+      margin-bottom: 1rem;
+    }
+    #subscribe input[type="email"],
+    #subscribe input[type="text"] {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #cbbf9d;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    #subscribe button {
+      background-color: #2F3D35;
+      color: #EADDCA;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    #subscribe button:hover {
+      background-color: #3e3125;
+    }
     footer {
       text-align: center;
       padding: 2rem 1rem;
@@ -102,9 +136,8 @@
 </head>
 <body>
   <header>
-    <!-- Replace header.jpg with your chosen top image -->
     <img src="Logo.jpg" alt="Rooted Movement Somatics">
-    <p>Its time to get back to your roots</p>
+    <p>It’s time to get back to your roots</p>
   </header>
 
   <nav>
@@ -115,7 +148,6 @@
 
   <section id="about" class="about">
     <h2>About Me</h2>
-    <!-- Replace about.jpg with your photo -->
     <img src="Ashlee.png" alt="Ashlee - Somatic Movement Educator">
     <p>Hi, I’m Ashlee, a Registered Somatic Movement Educator passionate about supporting women in reconnecting with their bodies, releasing stored tension, and cultivating deep awareness. Rooted Movement Somatics was born from a desire to create a grounded space for healing, nervous system regulation, and coming home to yourself. </p>
     <p>Through guided somatic movement practices, I help women shift from overwhelm to restoration, weaving together holistic body–mind–spirit practices in both individual and group sessions.</p>
@@ -124,12 +156,30 @@
   <section id="schedule" class="schedule">
     <h2>Book a Session</h2>
     <p>Choose a time that works for you and begin your journey back to your true source.</p>
-    <!-- Replace link below with your Calendly, Acuity, or Square booking link -->
     <a href="https://calendly.com/ashleerj1987" target="_blank">Schedule a Session</a>
   </section>
 
+  <!-- Subscribe section (Zoho embed simplified & styled) -->
+  <section id="subscribe">
+    <h2>Stay Connected</h2>
+    <p>Receive updates, resources, and openings delivered to your inbox.</p>
+    <form method="POST" action="https://zcsub-cmpzourl.maillist-manage.com/weboptin.zc" target="_zcSignup">
+      <input type="email" name="CONTACT_EMAIL" placeholder="Enter your email" required>
+      <input type="text" name="LASTNAME" placeholder="Your name (optional)">
+      <button type="submit">Sign Up</button>
+      <!-- Hidden fields from Zoho (kept intact) -->
+      <input type="hidden" name="zx" id="cmpZuid" value="1357df8f0">
+      <input type="hidden" id="zcld" name="zcld" value="1152baa2ae4dc7975">
+      <input type="hidden" id="zctd" name="zctd" value="1152baa2ae4dc77a9">
+      <input type="hidden" name="zc_trackCode" id="zc_trackCode" value="ZCFORMVIEW">
+      <input type="hidden" id="zc_formIx" name="zc_formIx" value="3zdefc1962990cd94929c6653ba9746fbe84fcb84677d1d1f6c34cecee977754dd">
+      <input type="hidden" id="submitType" name="submitType" value="optinCustomView">
+      <input type="hidden" id="formType" name="formType" value="QuickForm">
+    </form>
+  </section>
+
   <footer>
-    <p> Colossians 2:7 </p>
+    <p>Colossians 2:7</p>
     <p>&copy; 2025 Rooted Movement Somatics. All rights reserved.</p>
   </footer>
 </body>
